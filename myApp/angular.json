@@ -25,7 +25,9 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              { "glob": "**/*", "input": "../docs", "output": "./docs" },
+              "../_config.yml"
             ],
             "styles": [
               "src/styles.css"
